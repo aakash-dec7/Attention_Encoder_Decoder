@@ -1,7 +1,7 @@
 # Attention Encoder Decoder
 
 ## Overview
-This project implements a simple encoder-decoder sequence-to-sequence (seq2seq) model with Bahdanau Attention. The model is designed for neural machine translation tasks, such as translating English sentences into French. It leverages PyTorch to build and train the architecture.
+This project implements a simple encoder-decoder sequence-to-sequence (seq2seq) model with Bahdanau Attention. The model is designed for neural machine translation tasks, such as translating English sentences into Spanish. It leverages PyTorch to build and train the architecture.
 
 ## Features
 * Implements **Bahdanau Attention** mechanism to enhance the decoder's ability to focus on relevant parts of the input sequence.
@@ -10,9 +10,10 @@ This project implements a simple encoder-decoder sequence-to-sequence (seq2seq) 
 * Ability to save and load training checkpoints.
 * Configurable hyperparameters for flexibility in model design.
 * Uses PyTorch for building and training the model.
+* Implemented BLEU score evaluation to assess the performance of the model.
 
 ## Dataset
-The dataset used for training consists of paired sentences in English and French.
+The dataset used for training consists of paired sentences in English and Spanish.
 Data Preprocessing includes:
 * Adding special tokens (`<sos>` and `<eos>`) to target sentences.
 * Tokenization and padding of sentences to a maximum length.
@@ -20,7 +21,7 @@ Data Preprocessing includes:
 
 The dataset should be stored in a CSV file named eng_spn.csv, with two columns:
 * English words/sentences
-* French words/sentences
+* Spanish words/sentences
 
 ## Architecture
 The model consists of the following components:
